@@ -3,130 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VolunteerTrack | Disaster Recovery & Tracking</title>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <title>VolunteerTrack</title>
     
     <link rel="stylesheet" href="landing.css">
-    
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    <script src="before-after.js" defer></script>
+    <script src="before-after.js"></script>
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="container nav-container">
+    <header>
+        <div class="container nav">
             <div class="logo">
-                <a href="/">VolunteerTrack</a>
+                <span>VolunteerTrack</span>
             </div>
-
-            <nav aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a class="active" href="#" aria-current="page">Home</a></li>
-                    <li><a href="#">Forms</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
+            <nav>
+                <a class="active" href="#">Home</a>
+                <a href="#">Forms</a>
+                <a href="#">FAQ</a>
+                <a href="#">About</a>
             </nav>
         </div>
     </header>
-
     <main>
-        <section class="hero" aria-labelledby="hero-title">
+        <section class="hero">
             <div class="container center">
-                <h1 id="hero-title">Together, We Rebuild</h1>
-                <p class="subtitle">
-                    Track volunteer hours and donations to help communities recover from disasters and secure funding.
-                </p>
 
-                <div class="before-after" id="slider" role="img" aria-label="Before and after disaster recovery comparison slider">
-                    <img src="after.png" alt="Community after recovery" class="after-img">
+                <h1>Together, We Rebuild</h1>
+                <p class="subtitle">
+                    Track volunteer hours and donations to help communities recover from disasters
+                    and secure funding.
+                </p>
+                <div class="before-after" id="slider">
+
+                    <img src="after.png" >
+
                     <div class="before-wrapper" id="beforeWrapper">
-                        <img src="before.png" alt="Community before recovery" class="before-img">
+                        <img src="before.png">
                     </div>
 
-                    <div class="slider-line" id="sliderLine" aria-hidden="true">
+                    <div class="slider-line" id="sliderLine">
                         <div class="slider-handle"></div>
                         <i data-lucide="chevrons-left-right"></i>
                     </div>
 
                     <span class="label before">Before</span>
                     <span class="label after">After</span>
+
                 </div>
             </div>
         </section>
 
-        <section class="features-section" aria-labelledby="features-title">
+        <section class="features-section">
             <div class="container center">
-                <h2 id="features-title">What We Do</h2>
+
+                <h2>What We Do</h2>
+
                 <p class="section-desc">
                     VolunteerTrack helps communities document volunteer work and donated materials
                     after a disaster. This data is used to calculate the local match value needed
                     to secure FEMA and state recovery funding.
                 </p>
 
-                <div class="features-grid">
-                    <article class="card">
-                        <div class="icon" aria-hidden="true"><i data-lucide="users"></i></div>
+                <div class="features">
+
+                    <div class="card">
+                        <div class="icon">
+                            <i data-lucide="Users"></i>
+                        </div>
                         <h3>Track Volunteers</h3>
                         <p>Log hours worked by community volunteers across multiple projects.</p>
-                    </article>
+                    </div>
 
-                    <article class="card">
-                        <div class="icon" aria-hidden="true"><i data-lucide="heart"></i></div>
+                    <div class="card">
+                        <div class="icon">
+                            <i data-lucide="Heart"></i>
+                        </div>
                         <h3>Record Donations</h3>
                         <p>Document donated materials and their estimated value for auditing.</p>
-                    </article>
+                    </div>
 
-                    <article class="card">
-                        <div class="icon" aria-hidden="true"><i data-lucide="bar-chart-3"></i></div>
+                    <div class="card">
+                        <div class="icon">
+                            <i data-lucide="BarChart3"></i>
+                        </div>
                         <h3>Generate Reports</h3>
                         <p>Calculate total value and generate reports for grant applications.</p>
-                    </article>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="progress-section" aria-labelledby="progress-title">
+        <section class="progress-section">
             <div class="container center">
-                <h2 id="progress-title">Community Progress</h2>
-                <p class="section-desc">Total value raised from volunteer hours and donations</p>
+
+                <h2>Community Progress</h2>
+
+                <p class="section-desc">
+                    Total value raised from volunteer hours and donations
+                </p>
 
                 <div class="progress-card">
+
                     <div class="progress-top">
-                        <span class="amount"><strong>$10,616.80</strong></span>
+                        <span class="amount">$10,616.8</span>
                         <span class="goal">Goal: $100,000</span>
                     </div>
 
-                    <div class="progress-bar" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-fill" style="width: 11%;"></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
                     </div>
 
                     <div class="progress-bottom">
                         <span>76 volunteer hours</span>
                         <span>11% of goal</span>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="cta" aria-labelledby="cta-title">
+        <section class="cta">
             <div class="container center">
-                <h2 id="cta-title">Every Hour Counts</h2>
-                <p>Your time and contributions help our community recover faster. Submit your volunteer hours or donations today.</p>
-                <a class="btn" href="#">Get Started &rarr;</a>
+
+                <h2>Every Hour Counts</h2>
+
+                <p>
+                    Your time and contributions help our community recover faster.
+                    Submit your volunteer hours or donations today.
+                </p>
+
+                <a class="btn" href="#">Get Started →</a>
+
             </div>
         </section>
+
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 VolunteerTrack. Built for community disaster recovery.</p>
-        </div>
+    <footer>
+        © 2026 VolunteerTrack. Built for community disaster recovery.
     </footer>
-
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            lucide.createIcons();
-        });
+        lucide.createIcons();
     </script>
 </body>
 </html>
