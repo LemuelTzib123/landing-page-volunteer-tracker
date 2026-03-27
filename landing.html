@@ -9,7 +9,6 @@
     <title>VolunteerTrack</title>
     
     <link rel="stylesheet" href="landing.css">
-    <script src="before-after.js"></script>
 </head>
 <body>
     <header>
@@ -36,15 +35,16 @@
                 </p>
                 <div class="before-after" id="slider">
 
-                    <img src="after.png" >
+                    <img src="images/after.png">
 
                     <div class="before-wrapper" id="beforeWrapper">
-                        <img src="before.png">
+                        <img src="images/before.png">
                     </div>
 
                     <div class="slider-line" id="sliderLine">
-                        <div class="slider-handle"></div>
-                        <i data-lucide="chevrons-left-right"></i>
+                        <div class="slider-handle">
+                            <i data-lucide="chevrons-left-right"></i>
+                        </div>
                     </div>
 
                     <span class="label before">Before</span>
@@ -144,6 +144,8 @@
     <footer>
         © 2026 VolunteerTrack. Built for community disaster recovery.
     </footer>
+
+    <script src="before-after.js"></script>
     <script>
         lucide.createIcons();
     </script>
