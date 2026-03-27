@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sliderLine = document.getElementById("sliderLine");
 
   let isDragging = false;
-
+sliderLine.classList.add("nudge");
   const move = (e) => {
     if (!isDragging) return;
     const clientX = e.clientX || (e.touches && e.touches[0].clientX);
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   slider.addEventListener("pointerdown", (e) => {
     isDragging = true;
+    sliderLine.classList.remove("nudge");
     slider.setPointerCapture(e.pointerId);
     move(e);
   });
