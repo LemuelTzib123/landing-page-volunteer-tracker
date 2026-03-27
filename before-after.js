@@ -1,28 +1,45 @@
-const slider = document.getElementById("slider");
-const beforeWrapper = document.getElementById("beforeWrapper");
-const sliderLine = document.getElementById("sliderLine");
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.getElementById("slider");
+  const beforeWrapper = document.getElementById("beforeWrapper");
+  const sliderLine = document.getElementById("sliderLine");
 
-let dragging = false;
+  let isDragging = false;
 
-slider.addEventListener("mousedown", () => {
-  dragging = true;
-});
+  const move = (e) => {
+    if (!isDragging) return;
 
-window.addEventListener("mouseup", () => {
-  dragging = false;
-});
+    // Support both Mouse and Touch events
+    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+    const rect = slider.getBoundingClientRect();
+    
+    // Calculate horizontal offset
+    let x = clientX - rect.left;
 
-slider.addEventListener("mousemove", (e) => {
-  if (!dragging) return;
+    // Keep the slider within the bounds of the container
+    if (x < 0) x = 0;
+    if (x > rect.width) x = rect.width;
 
-  const rect = slider.getBoundingClientRect();
-  let x = e.clientX - rect.left;
+    const percentage = (x / rect.width) * 100;
 
-  if (x < 0) x = 0;
-  if (x > rect.width) x = rect.width;
+    // Update the clip-path of the "Before" wrapper
+    // inset(top, right, bottom, left)
+    beforeWrapper.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+    
+    // Move the vertical line
+    sliderLine.style.left = `${percentage}%`;
+  };
 
-  const percent = (x / rect.width) * 100;
+  // Event Listeners
+  slider.addEventListener("pointerdown", (e) => {
+    isDragging = true;
+    slider.setPointerCapture(e.pointerId); // Keeps tracking even if mouse leaves the box
+    move(e);
+  });
 
-  beforeWrapper.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
-  sliderLine.style.left = percent + "%";
+  // Use window/global listeners for movement so it's smoother
+  window.addEventListener("pointermove", move);
+
+  window.addEventListener("pointerup", () => {
+    isDragging = false;
+  });
 });
