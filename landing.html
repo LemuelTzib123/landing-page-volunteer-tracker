@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <title>VolunteerTrack</title>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="landing.css">
+  <title>Community Disaster Relief</title>
 </head>
 <body>
-    <header>
+      <header>
         <div class="container nav">
             <div class="logo">
                 <span>VolunteerTrack</span>
@@ -24,15 +21,84 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hero">
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">OVER THE PAST SEVEN YEARS</p>
+      <h1>$3+ Billion</h1>
+      <p class="subtitle">IN DISASTERS FUNDING TO COMMUNITIES JUST LIKE YOURS</p>
+      <p class="desc">Supporting communities affected by ice storms, floods, and natural disasters with coordinated volunteer relief efforts.</p>
+    </div>
+  </section>
+  <section class="impact">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">$3+ Billion</span>
+          <span class="stat-label">Total Funding Raised</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">#?</span>
+          <span class="stat-label">Active Volunteers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">#%</span>
+          <span class="stat-label">Progress to Goal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="focus">
+    <div class="container">
+      <h2>Areas of Focus</h2>
+      <div class="focus-grid">
+
+        <div class="focus-card">
+          <div class="focus-image volunteer-img">
+            <span>Volunteer</span>
+          </div>
+          <ul>
+            <li>On-site Cleanup and Debris Removal</li>
+            <li>Emergency Response Coordination</li>
+            <li>Community Outreach Programs</li>
+            <li>Volunteer Hour Tracking & Management</li>
+            <li>Safety Training and Certification</li>
+          </ul>
+        </div>
+
+        <div class="focus-card">
+          <div class="focus-image funding-img">
+            <span>Funding</span>
+          </div>
+          <ul>
+            <li>Hourly Rate Revenue Generation</li>
+            <li>Direct Donation Processing</li>
+            <li>Grant Application Assistance</li>
+            <li>Financial Transparency Reporting</li>
+            <li>Budget Allocation & Planning</li>
+          </ul>
+        </div>
+
+        <div class="focus-card">
+          <div class="focus-image support-img">
+            <span>Support</span>
+          </div>
+          <ul>
+            <li>24/7 Emergency Hotline</li>
+            <li>Mental Health & Counseling Resources</li>
+            <li>Supply Distribution Centers</li>
+            <li>Temporary Shelter Coordination</li>
+            <li>Long-term Recovery Planning</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+      <section class="hero">
             <div class="container center">
 
-                <h1>Together, We Rebuild</h1>
-                <p class="subtitle">
-                    Track volunteer hours and donations to help communities recover from disasters
-                    and secure funding.
-                </p>
+                <h1>SEE THE TRANSFORMATION</h1>
                 <div class="before-after" id="slider">
 
                     <img src="images/after.png">
@@ -53,101 +119,90 @@
                 </div>
             </div>
         </section>
+  <section class="testimonial">
+    <div class="container">
+      <blockquote>
+        "QUOTE FROM MAYOR"
+      </blockquote>
+      <cite> Mayor of WaterValley, Community Leader, Yalaboushae</cite>
+    </div>
+  </section>
+  <section class="progress-section">
+    <div class="container">
+      <h2> 2025 Ice Storm Recovery Project</h2>
+      <p class="project-desc">Emergency response and cleanup for the February 2025 ice storm</p>
 
-        <section class="features-section">
-            <div class="container center">
-
-                <h2>What We Do</h2>
-
-                <p class="section-desc">
-                    VolunteerTrack helps communities document volunteer work and donated materials
-                    after a disaster. This data is used to calculate the local match value needed
-                    to secure FEMA and state recovery funding.
-                </p>
-
-                <div class="features">
-
-                    <div class="card">
-                        <div class="icon">
-                            <i data-lucide="Users"></i>
-                        </div>
-                        <h3>Track Volunteers</h3>
-                        <p>Log hours worked by community volunteers across multiple projects.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">
-                            <i data-lucide="Heart"></i>
-                        </div>
-                        <h3>Record Donations</h3>
-                        <p>Document donated materials and their estimated value for auditing.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">
-                            <i data-lucide="BarChart3"></i>
-                        </div>
-                        <h3>Generate Reports</h3>
-                        <p>Calculate total value and generate reports for grant applications.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="progress-section">
-            <div class="container center">
-
-                <h2>Community Progress</h2>
-
-                <p class="section-desc">
-                    Total value raised from volunteer hours and donations
-                </p>
-
-                <div class="progress-card">
-
-                    <div class="progress-top">
-                        <span class="amount">$10,616.8</span>
-                        <span class="goal">Goal: $100,000</span>
-                    </div>
-
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-
-                    <div class="progress-bottom">
-                        <span>76 volunteer hours</span>
-                        <span>11% of goal</span>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container center">
-
-                <h2>Every Hour Counts</h2>
-
-                <p>
-                    Your time and contributions help our community recover faster.
-                    Submit your volunteer hours or donations today.
-                </p>
-
-                <a class="btn" href="#">Get Started →</a>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        © 2026 VolunteerTrack. Built for community disaster recovery.
-    </footer>
-
-    <script src="before-after.js"></script>
-    <script>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">#</span>
+          <span class="stat-label">Volunteers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">#</span>
+          <span class="stat-label">Hours</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">$#</span>
+          <span class="stat-label">Generated</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">$#</span>
+          <span class="stat-label">Donated</span>
+        </div>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-header">
+          <span>Fundraising Progress</span>
+          <span>$#% / $100,000,000</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 32%"></div>
+        </div>
+        <div class="progress-pct">#% of our goal achieved</div>
+      </div>
+    </div>
+  </section>
+  <section class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-icon">Pen</div>
+          <h3>1. Register to Help</h3>
+          <p>Fill out a simple volunteer form or make a direct donation. No account needed—just your willingness to make a difference.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">Chart</div>
+          <h3>2. Contribute Your Time</h3>
+          <p>Every volunteer hour you contribute generates $50/hour in recovery funding for essential cleanup and restoration work.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">Trophy</div>
+          <h3>3. Watch Impact Grow</h3>
+          <p>Track real-time progress as our community comes together. Your contribution directly funds the recovery efforts that rebuild lives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="location">
+    <div class="container">
+      <h2>Serving Communities Across the Region</h2>
+      <p>When disaster strikes your hometown, we're there. Our volunteer network spans multiple states, bringing rapid response and coordinated relief efforts to communities in need.</p>
+      <p>As a community-focused organization, we understand that the power of investment in local recovery is undeniable. We've seen firsthand how coordinated volunteer efforts can transform devastated areas into thriving communities once again.</p>
+      <p class="tagline">The power of community action is unstoppable.</p>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <h2>Let's Get Started.</h2>
+      <p>Every volunteer hour and donation brings us closer to full recovery. Join our community of helpers and be part of the solution.</p>
+      <a href="#" class="cta-btn">Get Started →</a>
+    </div>
+  </section>
+  <script src="before-after.js"></script>
+   <script>
         lucide.createIcons();
     </script>
+  <footer>© 2026 DisasterResponse. Helping communities recover together.</footer>
 </body>
 </html>
